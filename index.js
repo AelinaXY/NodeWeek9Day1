@@ -1,6 +1,7 @@
 const leftPad = require("left-pad");
 const axios = require("axios");
 const calc = require("./calc");
+const cow = require("./cow");
 
 // console.log(leftPad("Hello World", 60));
 
@@ -9,3 +10,5 @@ const calc = require("./calc");
 axios.get('https://pokeapi.co/api/v2/pokemon/meowscarada')
 .then(function (response) { console.log(response.data.name +'\n' +
 response.data.stats.forEach((m) => (console.log(`STAT: ${m.stat.name} | BASE: ${m.base_stat}`))));});
+
+console.log(cow.cowSayFunc('test'));
