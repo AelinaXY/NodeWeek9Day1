@@ -1,7 +1,7 @@
 const cow = require("cowsay");
-const cowSayFunc = function cowSays(a)
+function cowSays(a)
 {
-    cow.say({'text':a});
+    return cow.say({'text':a});
 }
 
-module.exports = {cowSayFunc};
+module.exports = {cowSays};

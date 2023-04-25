@@ -11,4 +11,4 @@ axios.get('https://pokeapi.co/api/v2/pokemon/meowscarada')
 .then(function (response) { console.log(response.data.name +'\n' +
 response.data.stats.forEach((m) => (console.log(`STAT: ${m.stat.name} | BASE: ${m.base_stat}`))));});
 
-console.log(cow.cowSayFunc('test'));
+console.log(cow.cowSays('test'));
